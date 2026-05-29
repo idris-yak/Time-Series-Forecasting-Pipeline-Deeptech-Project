@@ -1,15 +1,14 @@
-# Time-Series-Forecasting-Data Pipeline
+# Time-Series-Forecasting-Pipeline
 ## 1. Project Overview
 
 ### Title: Time Series Forecasting Pipeline
 **Objective:**
 Design and implement an automated pipeline that:
-
 - Ingests time-series data
 - Cleans and transforms it
 - Applies forecasting using Prophet
 - Stores predictions in a data warehouse (BigQuery or S3 + Athena)
-- Makes outputs available for BI tools (e.g., Power BI, Tableau)
+- Makes outputs available for BI tools. 
 
 ## 2. Architecture
         ┌──────────────┐
@@ -52,13 +51,58 @@ Design and implement an automated pipeline that:
 | Visualization   | Power BI / Tableau     |
 
 ## 4. Dataset
-Dataset used: Time Series Forecasting in Yahoo Stock Price
- 
-Link 🔗: 
+- Dataset used: Time Series Forecasting in Yahoo Stock Price
+link 🔗: 
+- Sales data:
+link 🔗:  
 
+---
 
-Also you can use any time-series dataset such as:
-- Sales data
-- Website traffic
-- Stock prices
-- Weather data
+##  Architecture
+1. Data Ingestion
+2. Data Cleaning & Validation
+3. Data Preprocessing
+4. Forecasting (Prophet)
+5. Cloud Storage (BigQuery/S3)
+6. Visualization (BI Tools)
+
+---
+##  Project Structure
+---
+time-series-forecasting-pipeline/
+- ├── data/
+- ├── scripts/
+- ├── airflow/
+- ├── sql/
+- ├── requirements.txt
+- └── README.md
+---
+##  How to Run
+
+### 1. Setup
+pip install -r requirements.txt
+
+### 2. Run Pipeline
+python scripts/ingest.py
+python scripts/preprocess.py
+python scripts/forecast.py
+python scripts/upload.py
+
+---
+
+##  Output
+- Forecast dataset (`forecast.csv`)
+- Stored in BigQuery/S3
+- Ready for Power BI/Tableau dashboards
+
+---
+
+##  Future Improvements
+- Real-time streaming (Kafka)
+- API deployment (FastAPI)
+- Advanced forecasting models (LSTM, XGBoost)
+
+---
+
+## 👤 Author
+Yakubu Idris M.
