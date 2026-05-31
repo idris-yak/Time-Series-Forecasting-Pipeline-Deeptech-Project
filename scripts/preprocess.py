@@ -43,7 +43,8 @@ def handle_missing_dates(df: pd.DataFrame) -> pd.DataFrame:
     df = df.set_index('ds').reindex(full_range).rename_axis('ds').reset_index()
 
     # Fill missing values (forward fill)
-    df['y'] = df['y'].fillna(method='ffill')
+    # df['y'] = df['y'].fillna(method='ffill')
+    df['y'] = df['y'].ffill()
 
     logging.info("Missing dates handled")
     return df
