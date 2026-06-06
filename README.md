@@ -52,9 +52,7 @@ Design and implement an automated pipeline that:
 
 ## 4. Dataset
 - Dataset used: Time Series Forecasting in Yahoo Stock Price
-link 🔗: 
-- Sales data:
-link 🔗:  
+link 🔗: https://drive.google.com/drive/folders/1xqSYsq_8mrJGXhB5OPztTf9vdLTvOqQo?usp=sharing
 
 ---
 
@@ -91,7 +89,7 @@ pip install -r requirements.txt
 ---
 
 ##  Output
-- Forecast dataset (`forecast.csv`)
+- Forecast dataset (`forecast.csv`) 
 - Stored in BigQuery/S3
 - Ready for Power BI/Tableau dashboards
 
