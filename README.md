@@ -83,10 +83,10 @@ time-series-forecasting-pipeline/
 pip install -r requirements.txt
 
 ### 2. Run Pipeline
-python scripts/ingest.py
-python scripts/preprocess.py
-python scripts/forecast.py
-python scripts/upload.py
+- python scripts/ingest.py
+- python scripts/preprocess.py
+- python scripts/forecast.py
+- python scripts/upload.py
 
 ---
 
